@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 //import home from './app/home'
 import FloorHost from './app/frame/host/FloorHost'
 import ListHost from "./app/frame/host/ListHost";
+import Category from "./app/frame/temp/CategoryPage";
 
 
 function home() {
@@ -57,7 +58,7 @@ function MyTabs() {
               <Image style={{ width: 20, height: 20 }}
                      source={focused ? require('./app/image/tab/home_check.png') : require('./app/image/tab/home.png') } />
           ),}}/>
-        <Tab.Screen name="list" component={list} options={{title:'列表',
+        <Tab.Screen name="list" component={Category} options={{title:'列表',
           tabBarIcon: ({ color, size,focused }) => (
               <Image
                   style={{ width: 20, height: 20 }}
