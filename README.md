@@ -22,3 +22,4 @@ init
 2020-09-20 init
 
 联系作者 wx: jimuopen
+文档更新详见：http://123.56.254.117:4000/shop.html
