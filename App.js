@@ -58,7 +58,7 @@ function HomeStackScreen() {
     LogBox.ignoreAllLogs(true)
     return (
         <Stack.Navigator>
-            <Stack.Screen name="find" component={FindScreen} />
+            <Stack.Screen name="find" component={G3CategoryHost} />
             <Stack.Screen name="detailFunction" component={DetailsScreen} />
             <Stack.Screen name="detail" component={DetailScreen} />
             <Stack.Screen name="G3CategoryHost" component={G3CategoryHost} />
