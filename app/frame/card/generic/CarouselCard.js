@@ -9,7 +9,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native'
-import { Carousel } from '@ant-design/react-native'
+//import { Carousel } from '@ant-design/react-native'
 import { px2dp } from '../../utils/ScreenUtils'
 import BaseCard from "../base/BaseCard";
 
@@ -39,7 +39,7 @@ export default class CarouselCard extends BaseCard{
   render() {
     return (
       <View style={styles.container}>
-        <Carousel
+        {/*<Carousel
           style={styles.swiperImage}
           selectedIndex={0}
           dots={true}
@@ -64,7 +64,7 @@ export default class CarouselCard extends BaseCard{
           }}
         >
           {this._showItem()}
-        </Carousel>
+        </Carousel>*/}
       </View>
     )
   }

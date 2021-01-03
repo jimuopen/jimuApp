@@ -6,6 +6,11 @@ import {HomePage} from "../page/HomePage";
 import {ListPage} from "../page/ListPage";
 import {MinePage} from "../page/MinePage";
 
+
+import {
+  Dimensions, PixelRatio,
+} from 'react-native'
+
 export default class PagesManager{
 
   /**
@@ -42,7 +47,7 @@ export default class PagesManager{
     }
     return new Promise(resolve => {resolve(retPage)})
 
-/*    return fetch('http://127.0.0.1:3000/shop/' + pageName, {
+  /*  return fetch('http://127.0.0.1:3000/shop/' + pageName, {
       method: 'POST',
       headers: {
         Accept: 'application/json',
