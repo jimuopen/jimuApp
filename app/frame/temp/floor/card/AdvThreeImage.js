@@ -12,7 +12,7 @@ export default () => {
             paddingRight:16,
             paddingTop: 8,
             paddingBottom: 8,
-            marginTop:16,
+            //marginTop:16,
             width: ScreenPara.size.width,
             height: ScreenPara.size.width/3.8 + 32,
             justifyContent:'space-between',

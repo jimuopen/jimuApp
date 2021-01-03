@@ -13,7 +13,7 @@ export default () => {
             alignItems: 'center',
             paddingHorizontal: px2dp(16),
             backgroundColor: '#fff',
-            marginTop: px2dp(16),
+            //marginTop: px2dp(16),
         },
         children: [
             {

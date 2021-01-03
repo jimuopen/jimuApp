@@ -15,7 +15,7 @@ export default () => {
             paddingRight:px2dp(16),
             paddingTop: px2dp(8),
             paddingBottom: px2dp(8),
-            marginTop:px2dp(16),
+            //marginTop:px2dp(16),
             backgroundColor:"white"
         },
         children: "2020年12月31日12:00"

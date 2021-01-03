@@ -12,7 +12,7 @@ export default () => {
             paddingRight:16,
             paddingTop: 8,
             paddingBottom: 8,
-            marginTop:16,
+            //marginTop:16,
             width: ScreenPara.size.width,
             height: ScreenPara.size.width/2 + 32,
             justifyContent:'space-between',
@@ -21,7 +21,7 @@ export default () => {
             backgroundColor: '#fff',
         },
         children: [
-            {
+/*            {
                 "name": "TextCard",
                 "style": {
                     width: ScreenPara.size.width - 32,
@@ -32,7 +32,7 @@ export default () => {
 
                 },
                 children:"单个图片广告"
-            },
+            },*/
             {
                 "name": "ImageCard",
                 "style": {

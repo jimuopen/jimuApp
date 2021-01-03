@@ -14,7 +14,7 @@ export default () => {
             flexDirection: 'column',
             justifyContent: 'center',
             alignSelf: 'center',
-            marginTop: px2dp(16),
+            //marginTop: px2dp(16),
             backgroundColor:"white"
         },
         children: [
