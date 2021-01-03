@@ -1,5 +1,6 @@
 # jimuApp
 App开源组件库
+2021-01-03 增加发现页-组件库
 2020-10-21 电商demo 0.1完成
 
 <img src="http://123.56.254.117:9000/shop/home1.png" width="375" height="667" />
@@ -22,4 +23,4 @@ init
 2020-09-20 init
 
 联系作者 wx: jimuopen
-文档更新详见：http://123.56.254.117:4000/shop.html
+文档更新详见：http://www.jimuopen.com/shop.html
