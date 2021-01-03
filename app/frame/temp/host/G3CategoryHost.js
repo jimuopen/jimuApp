@@ -227,14 +227,14 @@ export default class G3CategoryHost extends Component {
           {'category_name':'页面公告', "image":"https://h5static.m.jd.com/babel-tpls/babel_tower/static_image/页面公告-默认.png"},
           {'category_name':'文字标签', "image":"https://h5static.m.jd.com/babel-tpls/babel_tower/static_image/文字模板-默认.png"},
           {'category_name':'倒计时', "image":"https://h5static.m.jd.com/babel-tpls/babel_tower/static_image/倒计时-默认.png"},
-          {'category_name':'时间轴', "image":"https://h5static.m.jd.com/babel-tpls/babel_tower/static_image/时间轴-默认.png"},
-          {'category_name':'活动预约', "image":"https://h5static.m.jd.com/babel-tpls/babel_tower/static_image/活动预约-默认.png"},
-          {'category_name':'楼层标题', "image":"https://h5static.m.jd.com/babel-tpls/babel_tower/static_image/%E6%A5%BC%E5%B1%82%E6%A0%87%E9%A2%98-%E9%BB%98%E8%AE%A4.png"},
-          {'category_name':'全屏轮播', "image":"https://h5static.m.jd.com/babel-tpls/babel_tower/static_image/全屏轮播-默认.png"},
+              {'category_name':'楼层标题', "image":"https://h5static.m.jd.com/babel-tpls/babel_tower/static_image/%E6%A5%BC%E5%B1%82%E6%A0%87%E9%A2%98-%E9%BB%98%E8%AE%A4.png"},
+              {'category_name':'分割线', "image":"https://h5static.m.jd.com/babel-tpls/babel_tower/static_image/%E6%A5%BC%E5%B1%82%E6%A0%87%E9%A2%98-%E9%BB%98%E8%AE%A4.png"},
+              {'category_name':'全屏轮播', "image":"https://h5static.m.jd.com/babel-tpls/babel_tower/static_image/全屏轮播-默认.png"},
+              {'category_name':'自定义广告', "image":"https://h5static.m.jd.com/babel-tpls/babel_tower/static_image/图片资讯-默认.png"},
+              {'category_name':'时间轴', "image":"https://h5static.m.jd.com/babel-tpls/babel_tower/static_image/时间轴-默认.png"},
+              {'category_name':'活动预约', "image":"https://h5static.m.jd.com/babel-tpls/babel_tower/static_image/活动预约-默认.png"},
           {'category_name':'浮层图标', "image":"https://h5static.m.jd.com/babel-tpls/babel_tower/static_image/浮层icon-默认.png"},
-          {'category_name':'自定义广告', "image":"https://h5static.m.jd.com/babel-tpls/babel_tower/static_image/图片资讯-默认.png"},
-          {'category_name':'吸底banner', "image":"https://h5static.m.jd.com/babel-tpls/babel_tower/static_image/吸底banner-默认.png"},
-          {'category_name':'视频资讯', "image":"https://h5static.m.jd.com/babel-tpls/babel_tower/static_image/视频资讯-默认.png"},
+              {'category_name':'吸底banner', "image":"https://h5static.m.jd.com/babel-tpls/babel_tower/static_image/吸底banner-默认.png"},
         ]}]
     this.setState({
       data: [

@@ -14,6 +14,10 @@ import AdvThreeImage from "../floor/card/AdvThreeImage";
 import AdvOneImage from "../floor/card/AdvOneImage";
 import FloorTitle from "../floor/card/FloorTitle";
 import DivideLIne from "../floor/card/DivideLIne";
+import TextContainer from "../floor/card/TextContainer";
+import Image1Text from "../floor/card/Image1Text";
+import Image2Text from "../floor/card/Image2Text";
+import Image3Text from "../floor/card/Image3Text";
 
 /**
  * 楼层的宿主页面，使用各种卡片罗楼层
@@ -64,10 +68,27 @@ export default class G3FloorHost extends React.Component {
             DivideLIne(),
             FloorTitle('倒计时组件'),CountDown(),
             DivideLIne(16),
+            FloorTitle('左边图片右边一行文字'),
+            Image1Text('图文展示组件内容区域图文展示组件内容区域图文展示组件内容区域图文展示组件内容区域图文展示组件内容区域'),
+            DivideLIne(16),
+            FloorTitle('左边图片右边二行文字'),
+            Image2Text('展示文字大一些', '描述信息，文字会相对小一些，弱化内容展示在这里'),
+            DivideLIne(16),
+            FloorTitle('左边图片右边三行文字'),
+            Image3Text('展示文字大一些', '描述信息，文字会相对小一些，弱化内容展示在这里','其他信息会展示在这里'),
+            DivideLIne(16),
             FloorTitle('三个图片广告位组件'),AdvThreeImage(),
             DivideLIne(16),
-            FloorTitle('一个图片广告组件'),AdvOneImage()
-
+            FloorTitle('单个图片广告组件'),AdvOneImage(),
+            DivideLIne(16),
+            FloorTitle('文本组件'),DivideLIne(),
+            TextContainer("     这里可以展示一对对内容，这里可以展示一对对内容这里可以展示" +
+                "一对对内容这里可以展示一对对内容这里可以展示一对对内容一对对内容这里可以展示一对对内容这里可以展示一对对内容" +
+                "一对对内容这里可以展示一对对内容这里可以展示一对对内容一对对内容这里可以展示一对对内容这里可以展示一对对内容" +
+                "一对对内容这里可以展示一对对内容这里可以展示一对对内容一对对内容这里可以展示一对对内容这里可以展示一对对内容" +
+                "一对对内容这里可以展示一对对内容这里可以展示一对对内容一对对内容这里可以展示一对对内容这里可以展示一对对内容" +
+                "一对对内容这里可以展示一对对内容这里可以展示一对对内容一对对内容这里可以展示一对对内容这里可以展示一对对内容" +
+                "")
         ]
         console.log('-----3332232------')
         this.setState({})
