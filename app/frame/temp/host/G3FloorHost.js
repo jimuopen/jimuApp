@@ -13,6 +13,7 @@ import CountDown from "../floor/card/CountDown";
 import AdvThreeImage from "../floor/card/AdvThreeImage";
 import AdvOneImage from "../floor/card/AdvOneImage";
 import FloorTitle from "../floor/card/FloorTitle";
+import DivideLIne from "../floor/card/DivideLIne";
 
 /**
  * 楼层的宿主页面，使用各种卡片罗楼层
@@ -56,10 +57,15 @@ export default class G3FloorHost extends React.Component {
           this.setState({})
         })*/
 
-        this.data.cards = [FloorTitle('标题组件'),Tag(),
+        this.data.cards = [DivideLIne(16),
+            FloorTitle('标签组件'),Tag(),
+            DivideLIne(),
             FloorTitle('通知公告栏组件'), Notice(),
+            DivideLIne(),
             FloorTitle('倒计时组件'),CountDown(),
+            DivideLIne(16),
             FloorTitle('三个图片广告位组件'),AdvThreeImage(),
+            DivideLIne(16),
             FloorTitle('一个图片广告组件'),AdvOneImage()
 
         ]

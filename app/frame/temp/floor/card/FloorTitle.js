@@ -15,7 +15,7 @@ export default (title) => {
             paddingRight:16,
             paddingTop: 8,
             paddingBottom: 8,
-            marginTop:16,
+           // marginTop:16,
             backgroundColor:"white"
         },
         children: title||"楼层中间的标题"

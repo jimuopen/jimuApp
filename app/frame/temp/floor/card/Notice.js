@@ -13,10 +13,9 @@ export default () => {
             alignItems: 'center',
             paddingHorizontal: px2dp(16),
             backgroundColor: '#fff',
-            //marginTop: px2dp(16),
         },
         children: [
-            {
+/*            {
                 'name': 'ViewCard',
                 'style':
                     {
@@ -32,7 +31,7 @@ export default () => {
                         backgroundColor: '#ededed',
                     },
                 },
-            },
+            },*/
             {
                 'name': 'ViewCard',
                 'style': {
