@@ -9,19 +9,20 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native'
-import { px2dp } from '../../utils/ScreenUtils'
-import BaseCard from "../base/BaseCard";
+import { px2dp } from '../../../utils/ScreenUtils'
 import { Carousel } from '@ant-design/react-native'
 const screenWidth = Dimensions.get('window').width
 //轮播图
-export default class CarouselCard extends BaseCard{
+export default class CarouselCard extends React.Component {
 
   constructor(props) {
     super(props)
+    console.log('this.props.data=' + this.props.data)
+    console.dir(this.props.data)
   }
 
   _showItem = () => {
-    return this._data.map((item, index) => {
+    return this.props.data.map((item, index) => {
       const imageSource = item.imgUrl
       return (
         <TouchableOpacity
@@ -74,7 +75,7 @@ const styles = StyleSheet.create({
     marginBottom: px2dp(10),
   },
   swiperImage: {
-    width: screenWidth,
+  width: screenWidth,
     height: screenWidth * 120 / 375
-  }
+}
 })

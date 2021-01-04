@@ -3,8 +3,8 @@ import ViewCard from './ViewCard'
 import TextCard from './TextCard'
 import ImageCard from './ImageCard'
 import TouchableOpacityCard from './TouchableOpacityCard'
-import SwiperCard from './SwiperCard'
 import ScrollViewCard from './ScrollViewCard'
+import CarouselCard from './CarouselCard'
 /**
  * 卡片管理器，所有卡片在此注册
  */
@@ -23,6 +23,8 @@ export default class CardsManager{
         return <TextCard {...card} />
       case 'ImageCard':
         return <ImageCard {...card} />
+      case 'CarouselCard':
+        return <CarouselCard {...card} />
       /*case 'SwiperCard':
         return <SwiperCard {...card} onPress={(nav) => _onPress(nav)} />*/
       case 'ScrollViewCard':

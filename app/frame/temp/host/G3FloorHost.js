@@ -18,6 +18,7 @@ import TextContainer from "../floor/card/TextContainer";
 import Image1Text from "../floor/card/Image1Text";
 import Image2Text from "../floor/card/Image2Text";
 import Image3Text from "../floor/card/Image3Text";
+import CarouselImage from '../floor/card/CarouselImage'
 
 /**
  * 楼层的宿主页面，使用各种卡片罗楼层
@@ -88,9 +89,10 @@ export default class G3FloorHost extends React.Component {
                 "一对对内容这里可以展示一对对内容这里可以展示一对对内容一对对内容这里可以展示一对对内容这里可以展示一对对内容" +
                 "一对对内容这里可以展示一对对内容这里可以展示一对对内容一对对内容这里可以展示一对对内容这里可以展示一对对内容" +
                 "一对对内容这里可以展示一对对内容这里可以展示一对对内容一对对内容这里可以展示一对对内容这里可以展示一对对内容" +
-                "")
+                ""),
+          DivideLIne(16),
+          FloorTitle('轮播图组件'),CarouselImage()
         ]
-        console.log('-----3332232------')
         this.setState({})
     }
 

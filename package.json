@@ -10,6 +10,8 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@ant-design/react-native": "^3.3.0",
+    "@react-native-community/async-storage": "^1.10.0",
     "@react-native-community/masked-view": "^0.1.7",
     "@react-navigation/bottom-tabs": "^5.8.0",
     "@react-navigation/drawer": "^5.9.0",
