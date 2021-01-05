@@ -1,8 +1,9 @@
 import React from 'react'
 import {
-    Image,
+    ImageBackground,
     ScrollView,
     StyleSheet,
+  Image
 } from 'react-native'
 import {px2dp, px2sp, ScreenPara} from "../../utils/ScreenUtils";
 import RootView from "../../view/RootView";
@@ -129,7 +130,7 @@ export default class G3FloorHost extends React.Component {
         }
         const result = []
         this.data.cards.map((card, index) => {
-            let cardView = CardsManager.getCard(card, this._onPress)
+            let cardView = CardsManager.getCard(card, this._onPress, index)
             if (cardView) {
                 result.push(cardView)
             }
@@ -146,6 +147,21 @@ export default class G3FloorHost extends React.Component {
         }
     }
 
+  floatAdv = () => { //浮窗广告
+    return (
+      <Image source={{uri: "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1116638998,3357675018&fm=26&gp=0.jpg"}} style={{ width: px2dp(60), height: px2dp(60) ,position: 'absolute', bottom: px2dp(100), right: px2dp(30) }} resizeMode={'contain'} />
+    )
+  }
+
+  _footer = () => { //吸底广告
+      return (
+        <ImageBackground
+          style={{ position: 'absolute', bottom: 0, height: px2dp(74), paddingTop: px2dp(6), width: ScreenPara.size.width, flexDirection: 'row', alignItems: 'center' }}
+          source={{ uri: "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3475570381,2768348736&fm=26&gp=0.jpg" }}  resizeMode='stretch'>
+        </ImageBackground>
+      )
+  }
+
     render() {
         return (
             <RootView style={styles.container} ref={r => {
@@ -156,6 +172,10 @@ export default class G3FloorHost extends React.Component {
                             style={[{backgroundColor: '#f7f7f7', flex: 1}, (this.data.style)]}>
                     {this._renderCards()}
                 </ScrollView>
+
+              {this.floatAdv()}
+              {this._footer()}
+
             </RootView>
         )
     }

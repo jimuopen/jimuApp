@@ -16,19 +16,19 @@ export default class CardsManager{
     }
     switch (card.name) {
       case 'ViewCard':
-        return <ViewCard {...card} onPress={(nav) => _onPress(nav)}  />
+        return <ViewCard {...card} onPress={(nav) => _onPress(nav)} key={Math.random()} />
       case 'TouchableOpacityCard':
-        return <TouchableOpacityCard {...card} onPress={(nav) => _onPress(nav)} /> //事件传递是逐层上传的，一直传递到根view，根view有接收_onPress参数
+        return <TouchableOpacityCard {...card} onPress={(nav) => _onPress(nav)} key={Math.random()}/> //事件传递是逐层上传的，一直传递到根view，根view有接收_onPress参数
       case 'TextCard':
-        return <TextCard {...card} />
+        return <TextCard {...card} key={Math.random()}/>
       case 'ImageCard':
-        return <ImageCard {...card} />
+        return <ImageCard {...card} key={Math.random()}/>
       case 'CarouselCard':
-        return <CarouselCard {...card} />
+        return <CarouselCard {...card} key={Math.random()}/>
       /*case 'SwiperCard':
         return <SwiperCard {...card} onPress={(nav) => _onPress(nav)} />*/
       case 'ScrollViewCard':
-        return <ScrollViewCard {...card} onPress={(nav) => _onPress(nav)} />
+        return <ScrollViewCard {...card} onPress={(nav) => _onPress(nav)} key={Math.random()}/>
     }
   }
 }
